@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form action="/story/" method="post">{% csrf_token %}
+    <p>
+        {{ form.as_p }}
+        <input type="submit" value="Submit &rarr;">
+    </p>
+</form>
+{% endblock content %}

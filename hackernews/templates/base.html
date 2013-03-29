@@ -1,12 +1,20 @@
+{% load staticfiles %}
+
 <html>
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <title>Ayni Gercek Hackernews</title>
+    <link rel="stylesheet" href="{% static "css/master.css" %}" type="text/css">
 </head>
 <body>
-    {% block content %}
-    Buralar hep base
-    
-    {% endblock content %}
+    <div id="content">
+        <div id="header">
+            <div id="site-logo">N</div>
+            <div id="site-title">Hackernews Aynisi Gibi Degil</div>
+        </div>
+        {% block content %}
+           Buralar hep base
+        {% endblock content %}
+    </div>
 </body>
 </html>
